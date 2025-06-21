@@ -43,23 +43,30 @@
       font-size: 1.1rem;
     }
 
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
     
     .button {
-      background: #8b2dd1;
-      color: white;
-      border: none;
-      padding: 0.9rem;
-      border-radius: 30px;
-      font-size: 1rem;
-      font-weight: 600;
-      margin: 0.4rem 0;
-      width: 280px;
       display: flex;
       align-items: center;
-      justify-content: left;
-      gap: 14px;
+      justify-content: flex-start;
+      width: 90%;
+      max-width: 340px;
+      background: linear-gradient(145deg, #a855f7, #6b21a8);
+      color: #fff;
+      font-weight: 700;
+      padding: 0.7rem;
+      margin: 0.2rem 0;
+      border: none;
+      border-radius: 30px;
+      gap:20px;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 5px 15px rgba(168, 85, 247, 0.3);
     }
 
     .button:hover {
@@ -70,8 +77,7 @@
     .button img {
       width: 30px;
       height: 30px;
-      margin-left: 30px;
-
+      margin-left: 65px;
     }
 
     iframe {
@@ -84,7 +90,8 @@
   <img src="Dio_guapo.jpg" alt="Foto de perfil" class="profile-pic" />
   <img src="JozAnzie_Text.png" alt="Joz Anzie logo" class="signature" />
   <p>Productor musical, creativo visual y mente detrás de Eclipse Sounds. Beats, mezcla, mastering y más.</p>
-
+ 
+  <div class="button-container">
   <a href="https://drive.google.com/file/d/1JhstY5S5cs1LTltXB2dep_eSKmOewBOh/view" class="button" target="_blank">
     <img src="contrato.png" alt="Contrato"> Contrato
   </a>
@@ -103,6 +110,7 @@
   <a href="https://www.twitch.tv/jozanzie" class="button" target="_blank">
     <img src="Twitch.png" alt="Twitch"> Twitch
   </a>
+  </div>
 
 
   <iframe class="video" src="https://www.youtube.com/embed/5_7EGzSHcgg" allowfullscreen></iframe>
